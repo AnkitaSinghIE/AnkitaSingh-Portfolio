@@ -242,13 +242,14 @@ nav ul{
 <div class="logo">Ankita.</div>
 
 <ul>
-<li>Home</a></li>
-<li>About</a></li>
-<li>Skills</a></li>
-<li>Certifications</a></li>
-<li>Volunteering</a></li>
-<li>Projects</a></li>
-<li>Contact</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#Volunteering">Volunteering</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
 </ul>
 
 </nav>
@@ -352,6 +353,97 @@ I enjoy solving business problems through data-driven insights.
 </div>
 
 </div>
+<section class="experience" id="experience">
+
+    <h2 class="section-title">Experience</h2>
+
+    <div class="skills-grid">
+
+        <!-- PepsiCo -->
+        <div class="skill-card">
+            <h3>Assistant Data Engineer</h3>
+            <p style="color:#38bdf8;">
+                PepsiCo GBS | Sep 2025 – Present
+            </p>
+
+            <p style="text-align:left;">
+                • Working in Business Intelligence Operations (BIOps).<br>
+                • Building data lineage solutions and enterprise reporting dashboards.<br>
+                • Automating data processes using Python, SQL, DuckDB and Power BI.<br>
+                • Supporting data governance, operational reporting and analytics initiatives.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Graduate Engineer Trainee</h3>
+            <p style="color:#38bdf8;">
+                PepsiCo GBS | Aug 2023 – Sep 2025
+            </p>
+
+            <p style="text-align:left;">
+                • Developed Power BI dashboards and reporting solutions.<br>
+                • Worked on assignment group validation and data quality initiatives.<br>
+                • Supported incident management, analytics and automation projects.<br>
+                • Collaborated across teams to improve operational efficiency.
+            </p>
+        </div>
+
+        <!-- Microsoft -->
+        <div class="skill-card">
+            <h3>Microsoft Learn Student Ambassador</h3>
+            <p style="color:#38bdf8;">
+                Microsoft | Apr 2021 – Jul 2023 | Remote
+            </p>
+
+            <p style="text-align:left;">
+                • Published Microsoft-certified connector "Orb Intelligence".<br>
+                • Contributed to Microsoft's official Data Science for Beginners curriculum.<br>
+                • Delivered technical sessions and community events.<br>
+                • Authored technical blogs and educational content.
+            </p>
+        </div>
+
+        <!-- Future Ready Talent -->
+        <div class="skill-card">
+            <h3>Future Ready Talent Intern</h3>
+            <p style="color:#38bdf8;">
+                Microsoft Future Ready Talent | Oct 2021 – Apr 2022
+            </p>
+
+            <p style="text-align:left;">
+                • Learned Azure cloud services and modern development practices.<br>
+                • Built and deployed projects using Azure technologies.<br>
+                • Developed the CovidBotForYou project.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>All Round Marketing Intern</h3>
+            <p style="color:#38bdf8;">
+                Future Ready Talent | Nov 2021 – Dec 2021 | Remote
+            </p>
+
+            <p style="text-align:left;">
+                • Supported community engagement and program outreach initiatives.<br>
+                • Contributed to awareness and adoption activities for learning programs.
+            </p>
+        </div>
+
+        <!-- Sparks Foundation -->
+        <div class="skill-card">
+            <h3>Web Developer Intern</h3>
+            <p style="color:#38bdf8;">
+                The Sparks Foundation | Jun 2021 – Nov 2021
+            </p>
+
+            <p style="text-align:left;">
+                • Developed a banking system project enabling money transfer between users.<br>
+                • Applied web development fundamentals and problem-solving skills.<br>
+                • Enhanced technical, collaboration and project management capabilities.
+            </p>
+        </div>
+
+    </div>
 
 </section>
 <section id="Volunteering">
@@ -360,8 +452,8 @@ I enjoy solving business problems through data-driven insights.
 
 <div class="skills-grid">
 <div class="skill-card">
-<h3 align="left">Microsoft Learn Student Ambassador</h3>
-<p align="left">Microsoft Learn Student Ambassador is the program offered by Microsoft which connects students all across the globe and helps students to grow along with each other, where we learn from each other.
+<h3 >Microsoft Learn Student Ambassador</h3>
+<p >Microsoft Learn Student Ambassador is the program offered by Microsoft which connects students all across the globe and helps students to grow along with each other, where we learn from each other.
 Organized various event where ,taught people about different techniques and how technology make changes in our life. 
 Also participated in various webinars organized by a student from different countries.
 People share their experiences and their achievement and also their debug error we solve it and enjoy it .</p>
@@ -424,7 +516,7 @@ target="_blank">
 </section>
 
 <footer>
-<p>© 2026 Ankita Singh | Data Engineer</p>
+<p>©️ 2026 Ankita Singh | Data Engineer</p>
 </footer>
 
 <script>
@@ -488,7 +580,7 @@ card.innerHTML = `
 <p>${project.description}</p>
 
 <div class="tech">
-${project.tech.map(item => `<span>${item}</span>`).join("")}
+${project.tech.map(item => <span>${item}</span>).join("")}
 </div>
 
 <a class="project-link"
